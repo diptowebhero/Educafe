@@ -23,9 +23,9 @@ h5,
 h6 {
   font-family: "Inter", sans-serif;
 }
-p{
+p {
   color: rgba(71, 60, 58, 1);
-  font-size:15px;
+  font-size: 15px;
 }
 .container {
   max-width: 1200px;
@@ -206,8 +206,8 @@ p{
   margin: 8px 0;
 }
 /* category section end */
-#schedule{
-margin-top: 82px;
+#schedule {
+  margin-top: 82px;
 }
 .class-schedule {
   margin-top: 90px;
@@ -229,7 +229,7 @@ margin-top: 82px;
   place-items: center;
   grid-gap: 50px;
 }
-.schedule-left{
+.schedule-left {
   display: flex;
   flex-direction: column;
 }
@@ -241,76 +241,180 @@ margin-top: 82px;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
 }
-.schedule-right img{
+.schedule-right img {
   width: 100%;
 }
-.schedule-left-single img{
+.schedule-left-single img {
   width: 60px;
   height: 60px;
   margin-right: 10px;
 }
-.section-title{
+.section-title {
   margin-bottom: 30px;
 }
-.section-title h2{
+.section-title h2 {
   font-size: 40px;
   padding: 10px 0px;
 }
-.section-title p{
- padding-right: 10%;
+.section-title p {
+  padding-right: 10%;
 }
 /* schedule section end */
-.feature-section{
+.feature-section {
   margin-top: 80px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
-.feature-container{
-  display:grid;
-  grid-template-columns: repeat(3,1fr);
+.feature-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   place-items: center;
   background: #fff;
   padding: 25px 0px;
   border-radius: 10px;
 }
-.single-feature{
+.single-feature {
   display: flex;
   align-items: center;
 }
-.single-feature img{
+.single-feature img {
   width: 60px;
   height: 60px;
   margin-right: 15px;
 }
 /* feature section end */
-.certificate-section{
+.certificate-section {
   margin-top: 90px;
 }
-.certificate-container{
+.certificate-container {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
 }
-.certificate-left{
+.certificate-left {
   margin-top: 20px;
 }
-.certificate-left h2{
+.certificate-left h2 {
   font-size: 40px;
   padding: 30px 0px;
 }
-.certificate-left p{
+.certificate-left p {
   margin-bottom: 30px;
 }
-.certificate-right img{
+.certificate-right img {
   width: 100%;
 }
-.btn{
-  padding: 12px 34px;
+.btn {
+  padding: 14px 34px;
   border: none;
   background: #fe3c5e;
   color: #fff;
-  border-radius:5px;
+  border-radius: 5px;
   font-weight: 600;
 }
+/* certificate section end */
+.section-search {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.search-container {
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0px, 12.44px rgba(181, 3, 3, 0.02);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin: 0px 50px;
+}
+.form-control {
+  border: none;
+  font-size: 14px;
+  outline: none;
+}
+/* search section end */
+.footer-section {
+  margin-bottom: 100px;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+.footer-header p {
+  padding-right: 20%;
+}
+.footer-right p {
+  padding: 10px 0px;
+  font-weight: bold;
+}
+.social {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.social h4 {
+  margin-right: 20px;
+  font-size: 20px;
+}
+.icons {
+  margin-top: 8px;
+}
+.icon{
+  background:none;
+  border-radius: 50px;
+  padding: 1px 1px;
+  transition: .3s;
+}
+.icon:hover{
+  background:#FFEAA7;
+  transform: translateY(-3px);
+}
+.icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.information-container {
+  margin-top: 20px;
+}
+.information-container h4 {
+  margin-bottom: 10px;
+  color: rgba(71, 60, 58, 1);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.single-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.single-information p{
+  margin-bottom: 10px;
+}
+.form input{
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius:5px;
+  background-color: #CCCCCC;
+  color: #2b2b2b;
+  outline: none;
+}
+.form textarea{
+  border: none;
+  background-color: #cccccc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.form-group h4{
+  margin-bottom: 10px;
+  color: rgba(71, 60, 58, 1);
+}
+
 /* responsive */
 @media only screen and (max-width: 768px) {
   .nav-bar ul,
@@ -344,12 +448,12 @@ margin-top: 82px;
     place-items: center;
   }
   .category-container {
-    grid-template-columns:  1fr;
-  }
-  .feature-container{
     grid-template-columns: 1fr;
   }
-  .certificate-container{
+  .feature-container {
+    grid-template-columns: 1fr;
+  }
+  .certificate-container {
     grid-template-columns: 1fr;
   }
 }
